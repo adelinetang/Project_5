@@ -3,4 +3,7 @@ public final class LinkedQueue<T extends Comparable<? super T>> implements Verte
 
     public T getDepthFirstTraversal();
 
+    private VertexInterface<T>;
+
+    public resetVertices();
 }
