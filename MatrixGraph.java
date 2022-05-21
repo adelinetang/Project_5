@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.*;
  
  public class MatrixGraph{
@@ -5,16 +6,34 @@ import java.util.*;
      private static int matrix [] [];
 
     MatrixGraph(int size){
+=======
+import java.util*;
+ 
+ public class MatrixGraph{
+     ArrayList<Node> vertices; 
+     private static int matrix [] [];
+     StringBuilder b = new StringBuilder();
+
+    AdjacencyMatrixGraph(int size){
+>>>>>>> 9988fefd3c152b7ad415fe1945cddc361c0395d1
         vertices = new ArrayList<>();
         matrix = new int[size][size];
     } //end constructor 
 
+<<<<<<< HEAD
     public void addNode(Vertex vertices){ 
+=======
+    public void addNode(Node vertices){ 
+>>>>>>> 9988fefd3c152b7ad415fe1945cddc361c0395d1
         vertices.add(vertices); 
     } //end addNode
 
     public void addEdge(int intial, int target){
+<<<<<<< HEAD
         matrix[intial][target] = 1; 
+=======
+        martix[intial][target] == 1; 
+>>>>>>> 9988fefd3c152b7ad415fe1945cddc361c0395d1
     } //end addEdge
 
     public boolean checkEdge(int intial, int target){
@@ -25,6 +44,7 @@ import java.util.*;
             return false;
         }
     }//end checkEdge
+<<<<<<< HEAD
 
     void BFS(int start, int numbvertex)
     {
@@ -54,3 +74,6 @@ import java.util.*;
         }
     }
 }
+=======
+ }
+>>>>>>> 9988fefd3c152b7ad415fe1945cddc361c0395d1
