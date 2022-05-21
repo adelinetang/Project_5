@@ -5,4 +5,6 @@ public class Vertex{
 
     this.data = data;
     }
+    public void add(Vertex vertices) {
+    }
 }
