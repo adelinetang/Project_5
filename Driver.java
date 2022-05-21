@@ -25,5 +25,8 @@ public class Driver{
         graph.addEdge(2, 1);
         graph.addEdge(8, 5);
         graph.BFS(0,9);
+        System.out.println();
+        boolean[] examined = new boolean [9];
+        graph.DFS(0, examined);
     }
 }

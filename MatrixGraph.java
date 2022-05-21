@@ -54,40 +54,22 @@ public class MatrixGraph{
         }
     }
 
-    void DFS(int start, int numbvertex){
+    void DFS(int start, boolean[] examined){
+ 
+        System.out.print(start + " ");
+ 
+        examined[start] = true;
+ 
 
-    }
-
-    public print(){
-        System.out.println("The adjacency matrix for the given graph is: ");
-        for(int i=1; i<=9; i++){
-            System.out.print(i + " ");
-        }
-
-        for(int i=1; i<=9; i++){
-            System.out.print(i + " ");
-                for(int j=1; j<=9; j++){
-                    System.out.print(graph.getEdge(i, j) + " ");
-                }
-        }
-    }
-/*
-      System.out.println("The adjacency matrix for the given graph is: ");
-            System.out.print("  ");
-            for (int i = 1; i <= 9; i++)
-                System.out.print(i + " ");
-            System.out.println();
-
-            for (int i = 1; i <= 9; i++)
-            {
-                System.out.print(i + " ");
-                for (int j = 1; j <= 9; j++)
-                    System.out.print(graph.getEdge(i, j) + " ");
-                System.out.println();
+        for (int i = 0; i < matrix[start].length; i++) {
+ 
+            if (matrix[start][i] == 1 && (!examined[i])) {
+                DFS(i, examined);
             }
+        }
+    }
 
-        }  print should look something like this
-*/
+
 /*
     public QueueInterface<T> getdepthFirstTraversal(T origin){
         //assumes graph is not empty
